@@ -1,0 +1,42 @@
+---
+- hosts: localhost
+  gather_facts: false
+
+  tasks:
+  - name: "Get the date (localhost)"
+    shell: "date +%Y%m%d"
+    register: date
+
+  - name: "Set variables"
+    set_fact:
+     cur_date: "{{ date.stdout[0:10] }}"
+
+  - name: "Display output"
+    debug:
+     msg: "Date Value -> {{ cur_date }}"
+
+- hosts: switches
+  vars:
+    dir: ./configs
+    cur_date: "{{ hostvars['localhost']['cur_date'] }}"
+  gather_facts: false
+  connection: network_cli
+  collections:
+    - dellemc.os10
+
+  tasks:
+  - name: "Get the configs from all nodes"
+    os10_command:
+      commands:
+        - show running-configuration
+    register: config
+
+#  - name: "2nd output"
+#    debug:
+#     msg: "Valore data -> {{ cur_date }}"
+
+  - name: "Save config on ./configs"
+    copy:
+      content: "{{ config.stdout[0] }}"
+      dest: "{{ dir }}/{{ cur_date }}-{{ inventory_hostname }}.txt"
+...
