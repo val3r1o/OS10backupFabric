@@ -1,0 +1,10 @@
+---
+#Basic info to access OS10 - default psw
+ansible_ssh_user: admin
+ansible_ssh_pass: admin
+ansible_connection: network_cli
+#get root user on remote host
+#ansible_become_method: enable
+ansible_network_os: dellos10
+...
+
