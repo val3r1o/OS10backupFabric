@@ -1,12 +1,12 @@
 ! Version 10.5.2.3
-! Last configuration change at Jun  22 15:59:04 2021
+! Last configuration change at Jun  23 15:53:32 2021
 !
 ip vrf default
 !
 system-user linuxadmin password ****
 iscsi target port 860
 iscsi target port 3260
-hostname HOST3
+hostname HOST4
 username admin password **** role sysadmin priv-lvl 15
 aaa authentication login default local
 aaa authentication login console local
@@ -72,14 +72,14 @@ port-group 1/1/18
 interface vlan1
  no shutdown
 !
-interface vlan101
+interface vlan102
  no shutdown
- ip address 192.168.101.103/24
+ ip address 192.168.102.104/24
 !
 interface mgmt1/1/1
  no shutdown
  no ip address dhcp
- ip address 10.0.0.13/24
+ ip address 10.0.0.14/24
  ipv6 address autoconfig
 !
 interface ethernet1/1/1
@@ -87,8 +87,7 @@ interface ethernet1/1/1
  no shutdown
  switchport mode trunk
  switchport access vlan 1
- switchport trunk allowed vlan 101
- mtu 9216
+ switchport trunk allowed vlan 102
  flowcontrol receive off
 !
 interface ethernet1/1/2
@@ -366,7 +365,7 @@ interface ethernet1/1/56
  switchport access vlan 1
  flowcontrol receive off
 !
-ip route 0.0.0.0/0 192.168.101.254
+ip route 0.0.0.0/0 192.168.102.254
 !
 snmp-server contact "Contact Support"
 !

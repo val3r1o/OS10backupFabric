@@ -1,12 +1,12 @@
 ! Version 10.5.2.3
-! Last configuration change at Jun  22 15:59:04 2021
+! Last configuration change at Jun  23 15:53:15 2021
 !
 ip vrf default
 !
 system-user linuxadmin password ****
 iscsi target port 860
 iscsi target port 3260
-hostname HOST3
+hostname HOST1
 username admin password **** role sysadmin priv-lvl 15
 aaa authentication login default local
 aaa authentication login console local
@@ -74,26 +74,32 @@ interface vlan1
 !
 interface vlan101
  no shutdown
- ip address 192.168.101.103/24
+ ip address 192.168.101.101/24
 !
-interface mgmt1/1/1
- no shutdown
- no ip address dhcp
- ip address 10.0.0.13/24
- ipv6 address autoconfig
-!
-interface ethernet1/1/1
- description "Link to Leaf3"
+interface port-channel101
  no shutdown
  switchport mode trunk
  switchport access vlan 1
  switchport trunk allowed vlan 101
- mtu 9216
+!
+interface mgmt1/1/1
+ no shutdown
+ no ip address dhcp
+ ip address 10.0.0.11/24
+ ipv6 address autoconfig
+!
+interface ethernet1/1/1
+ description "Link to Leaf1"
+ no shutdown
+ channel-group 101 mode active
+ no switchport
  flowcontrol receive off
 !
 interface ethernet1/1/2
+ description "Link to Leaf2"
  no shutdown
- switchport access vlan 1
+ channel-group 101 mode active
+ no switchport
  flowcontrol receive off
 !
 interface ethernet1/1/3
