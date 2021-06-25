@@ -3,7 +3,7 @@
 Leaf-1A ansible_host=10.0.0.1 ansible_network_os=dellos10
 Leaf-1B ansible_host=10.0.0.2 ansible_network_os=dellos10
 Leaf-2A ansible_host=10.0.0.3 ansible_network_os=dellos10
-Leaf-2B ansible_host=10.0.0.4 ansible_network_os=dellos10
+# Leaf-2B ansible_host=10.0.0.4 ansible_network_os=dellos10
 Leaf-3A ansible_host=10.0.0.5 ansible_network_os=dellos10
 Leaf-3B ansible_host=10.0.0.6 ansible_network_os=dellos10
 
@@ -36,4 +36,8 @@ EXT-R3-DC1 ansible_host=10.0.0.25 ansible_network_os=dellos10
 
 Host-5 ansible_host=10.0.0.26 ansible_network_os=dellos10
 Host-6 ansible_host=10.0.0.27 ansible_network_os=dellos10
+
+FW1 ansible_host=10.0.0.30 ansible_network_os=dellos10
+FW2 ansible_host=10.0.0.31 ansible_network os=dellos10 
+
 
