@@ -9,7 +9,6 @@ cd OS10backupFabric/
 ansible-playbook -i inventory copyconfig.yml
 git status
 git pull
-cat inventory
 git pull
 git add .
 git commit -a -m "git sync"
