@@ -1,7 +1,8 @@
 Lab includes:
 
 ACCESS</br>
-Switch pair with VLT. Single Homed Switch</br>
+Switch pair with MCLAG (VLT)</br> 
+Single Homed Switch</br>
 LAG ports for Server attached (host=OS10)</br>
 ACL's/ip-prefix filtering (this is not working due to GNS3)</br>
 
