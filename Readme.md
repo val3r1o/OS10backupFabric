@@ -23,5 +23,4 @@ L2 exit to Firewall (OS10), FW1/FW2 over VxLAN communication </br>
 Static Route for DC1/DC2 exit/last resort Static route redistribution on EVPN for A/A DC exit/fail-over</br>
 
 
-![topology](https://user-images.githubusercontent.com/20860769/124128101-be64a980-da7c-11eb-84be-aabb0069ccc0.png)
-
+![topology](https://user-images.githubusercontent.com/20860769/124929260-a652d400-e000-11eb-8d7e-d28e65655ef3.png)
