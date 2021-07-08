@@ -1,7 +1,15 @@
+How to use.
+
+Backup.sh script to lunch the back up and sync on git</br>
+This is to be used under source ~/opt/dellos10env/bin/activate virtual ENV </br>
+Please review https://github.com/val3r1o/startupdellos10ansible to create control node right way </br>
+Ansible Palybook (copyconfig.yml) to keep back up of full fabric (inventory) configuration on /configs</br>
+Topology represent the scenario on GNS3. Dell SmartFabric OS10.5.2.3 </br>
+
 Lab includes:
 
 ACCESS</br>
-Switch pair with MCLAG (VLT)</br> 
+Switch pair with MCLAG </br> 
 Single Homed Switch</br>
 LAG ports for Server attached (host=OS10)</br>
 ACL's/ip-prefix filtering (this is not working due to GNS3)</br>
