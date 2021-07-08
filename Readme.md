@@ -6,6 +6,8 @@ Please review https://github.com/val3r1o/startupdellos10ansible to create contro
 Ansible Palybook (copyconfig.yml) to keep back up of full fabric (inventory) configuration on /configs</br>
 Topology represent the scenario on GNS3. Dell SmartFabric OS10.5.2.3 </br>
 
+Tha main point of this space is not the Ansible script, rather the Network configuration and possible replication of it.
+
 Lab includes:
 
 ACCESS</br>
