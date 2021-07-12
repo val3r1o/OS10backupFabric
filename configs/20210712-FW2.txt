@@ -1,5 +1,5 @@
 ! Version 10.5.2.3
-! Last configuration change at Jul  12 12:26:27 2021
+! Last configuration change at Jul  12 14:21:55 2021
 !
 ip vrf default
 !
@@ -81,6 +81,10 @@ interface port-channel10
  switchport mode trunk
  switchport access vlan 1
  switchport trunk allowed vlan 10
+!
+interface loopback2
+ no shutdown
+ ip address 2.2.2.2/32
 !
 interface mgmt1/1/1
  no shutdown
