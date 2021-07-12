@@ -1,15 +1,12 @@
 ! Version 10.5.2.3
-! Last configuration change at Jul  12 12:24:52 2021
+! Last configuration change at Jul  12 12:26:27 2021
 !
 ip vrf default
 !
 system-user linuxadmin password ****
 iscsi target port 860
 iscsi target port 3260
-hostname Spine2
-default mtu 9216
-bfd enable
-bfd interval 150 min_rx 200 multiplier 3 role active
+hostname FW2
 username admin password **** role sysadmin priv-lvl 15
 aaa authentication login default local
 aaa authentication login console local
@@ -75,94 +72,64 @@ port-group 1/1/18
 interface vlan1
  no shutdown
 !
-interface loopback0
+interface vlan10
  no shutdown
- ip address 10.2.1.2/32
+ ip address 1.1.1.2/24
+!
+interface port-channel10
+ no shutdown
+ switchport mode trunk
+ switchport access vlan 1
+ switchport trunk allowed vlan 10
 !
 interface mgmt1/1/1
  no shutdown
  no ip address dhcp
- ip address 10.0.0.8/24
+ ip address 10.0.0.31/24
  ipv6 address autoconfig
 !
 interface ethernet1/1/1
- description "to leaf1"
+ description "Link to Leaf4A"
  no shutdown
+ channel-group 10 mode active
  no switchport
- mtu 9216
- ipv6 nd max-ra-interval 4
- ipv6 nd min-ra-interval 3
- ipv6 nd send-ra
  flowcontrol receive off
 !
 interface ethernet1/1/2
- description "to leaf2"
+ description "Link to Leaf4B"
  no shutdown
+ channel-group 10 mode active
  no switchport
- mtu 9216
- ipv6 nd max-ra-interval 4
- ipv6 nd min-ra-interval 3
- ipv6 nd send-ra
  flowcontrol receive off
 !
 interface ethernet1/1/3
- description "to leaf3"
  no shutdown
- no switchport
- mtu 9216
- ipv6 nd max-ra-interval 4
- ipv6 nd min-ra-interval 3
- ipv6 nd send-ra
+ switchport access vlan 1
  flowcontrol receive off
 !
 interface ethernet1/1/4
- description "to leaf4"
  no shutdown
- no switchport
- mtu 9216
- ipv6 nd max-ra-interval 4
- ipv6 nd min-ra-interval 3
- ipv6 nd send-ra
+ switchport access vlan 1
  flowcontrol receive off
 !
 interface ethernet1/1/5
- description "to leaf5"
  no shutdown
- no switchport
- mtu 9216
- ipv6 nd max-ra-interval 4
- ipv6 nd min-ra-interval 3
- ipv6 nd send-ra
+ switchport access vlan 1
  flowcontrol receive off
 !
 interface ethernet1/1/6
- description "to leaf6"
  no shutdown
- no switchport
- mtu 9216
- ipv6 nd max-ra-interval 4
- ipv6 nd min-ra-interval 3
- ipv6 nd send-ra
+ switchport access vlan 1
  flowcontrol receive off
 !
 interface ethernet1/1/7
- description "to Super-Spine1"
  no shutdown
- no switchport
- mtu 9216
- ipv6 nd max-ra-interval 4
- ipv6 nd min-ra-interval 3
- ipv6 nd send-ra
+ switchport access vlan 1
  flowcontrol receive off
 !
 interface ethernet1/1/8
- description "to Super-Spine2"
  no shutdown
- no switchport
- mtu 9216
- ipv6 nd max-ra-interval 4
- ipv6 nd min-ra-interval 3
- ipv6 nd send-ra
+ switchport access vlan 1
  flowcontrol receive off
 !
 interface ethernet1/1/9
@@ -407,50 +374,7 @@ interface ethernet1/1/56
 !
 management route 0.0.0.0/0 managementethernet
 !
-router bgp 65201
- bfd all-neighbors
- router-id 100.2.1.2
- !
- address-family ipv4 unicast
-  network 10.2.1.2/32
- !
- template ebgp_session
-  send-community extended
-  !
-  address-family l2vpn evpn
-   activate
- !
- neighbor interface ethernet1/1/1
-  inherit template ebgp_session inherit-type ebgp
-  no shutdown
- !
- neighbor interface ethernet1/1/2
-  inherit template ebgp_session inherit-type ebgp
-  no shutdown
- !
- neighbor interface ethernet1/1/3
-  inherit template ebgp_session inherit-type ebgp
-  no shutdown
- !
- neighbor interface ethernet1/1/4
-  inherit template ebgp_session inherit-type ebgp
-  no shutdown
- !
- neighbor interface ethernet1/1/5
-  inherit template ebgp_session inherit-type ebgp
-  no shutdown
- !
- neighbor interface ethernet1/1/6
-  inherit template ebgp_session inherit-type ebgp
-  no shutdown
- !
- neighbor interface ethernet1/1/7
-  inherit template ebgp_session inherit-type ebgp
-  no shutdown
- !
- neighbor interface ethernet1/1/8
-  inherit template ebgp_session inherit-type ebgp
-  no shutdown
+ip route 0.0.0.0/0 1.1.1.254
 !
 snmp-server contact "Contact Support"
 !

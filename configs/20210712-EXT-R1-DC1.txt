@@ -1,5 +1,5 @@
 ! Version 10.5.2.3
-! Last configuration change at Jul  12 12:16:06 2021
+! Last configuration change at Jul  12 12:25:13 2021
 !
 ip vrf default
 !
@@ -344,7 +344,9 @@ interface ethernet1/1/51
 interface ethernet1/1/52
  no shutdown
  switchport access vlan 1
+<164>1 2021-07-12T12:25:45.352482+00:00 EXT-R1-DC1 dn_alm 1123 - - Node.1-Unit.1:PRI [alarm], Dell EMC (OS10) %PM_SYS_UTIL_LO:  CPU Utilization 1-minute Low Threshold alarm Raised: 79.97 (85-75) %%ACTION=RAISED %%SEQUENCE=108517
  flowcontrol receive off
+<161>1 2021-07-12T12:25:45.568071+00:00 EXT-R1-DC1 dn_alm 1123 - - Node.1-Unit.1:PRI [alarm], Dell EMC (OS10) %PM_SYS_UTIL_HI:  CPU Utilization 1-minute High Threshold alarm Raised: 92.45 (85-75) %%ACTION=RAISED %%SEQUENCE=108518
 !
 interface ethernet1/1/53
  no shutdown
