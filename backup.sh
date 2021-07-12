@@ -11,7 +11,7 @@ git status
 git pull
 git pull
 git add .
-git commit -a -m "optimization NSX-T single VLAN bgp peering DC1"
+git commit -a -m "generic sync"
 git push origin main
 git status
 
