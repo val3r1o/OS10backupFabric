@@ -40,3 +40,4 @@
       content: "{{ config.stdout[0] }}"
       dest: "{{ dir }}/{{ cur_date }}-{{ inventory_hostname }}.txt"
 ...
+
