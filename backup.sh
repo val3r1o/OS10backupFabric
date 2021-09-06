@@ -16,14 +16,13 @@ git push origin main
 git status
 
 echo ----------- This is an automatic backup -------------------------------------------------------------
-echo ---- please note on git auth changes August 2021 ----------------------------------------------------
-echo - update
-
-echo - single password not accepted anymore. 
-echo - setup your token:</br>
-echo - https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token</br>
-echo - remember to move from SSH to HTTPS remote git</br>
-echo - https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories</br>
-echo-
+echo - update                                                                                          ---
+echo ---- please note on git auth changes August 2021                                                  ---
+echo - single password not accepted anymore                                                            ---
+echo - setup your token                                                                                ---
+echo - https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token
+echo - remember to move from SSH to HTTPS remote git                                                   ---
+echo - https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories    ---
+echo------------------------------------------------------------------------------------------------------
 echo ---------------------------------------------- Dell NETWORKING --------------------------------------
 echo --------------------------valerio.martini@gmail.com--------------------------------------------------
