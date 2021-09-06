@@ -1,3 +1,11 @@
+#update#
+
+single password not accepted anymore. 
+Setup your token: 
+https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token 
+remember to move from SSH to HTTPS remote git
+https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories
+
 How to use.
 
 Backup.sh script to lunch the back up and sync on git</br>
