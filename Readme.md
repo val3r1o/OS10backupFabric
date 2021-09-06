@@ -2,11 +2,11 @@
 
 single password not accepted anymore. 
 setup your token:</br>
-https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token 
+https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token</br>
 remember to move from SSH to HTTPS remote git</br>
-https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories
+https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories</br>
 
-</b>How to use</b>
+</B>How to use</B>
 
 Backup.sh script to lunch the back up and sync on git</br>
 This is to be used under source ~/opt/dellos10env/bin/activate virtual ENV </br>
