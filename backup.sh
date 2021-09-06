@@ -12,7 +12,7 @@ git status
 git pull
 git pull
 git add .
-git commit -a -m "added rack5. adjusted exit route and FW2 configs"
+git commit -a -m "standard update"
 git push origin main
 git status
 
