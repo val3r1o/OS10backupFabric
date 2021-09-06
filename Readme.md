@@ -1,9 +1,9 @@
 #update#
 
 single password not accepted anymore. 
-Setup your token: 
+setup your token:</br>
 https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token 
-remember to move from SSH to HTTPS remote git
+remember to move from SSH to HTTPS remote git</br>
 https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories
 
 </b>How to use</b>
