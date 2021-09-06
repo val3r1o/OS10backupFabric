@@ -6,7 +6,7 @@ https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-
 remember to move from SSH to HTTPS remote git
 https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories
 
-How to use.
+</b>How to use</b>
 
 Backup.sh script to lunch the back up and sync on git</br>
 This is to be used under source ~/opt/dellos10env/bin/activate virtual ENV </br>
