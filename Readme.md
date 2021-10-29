@@ -7,5 +7,7 @@ Please review https://github.com/val3r1o/startupdellos10ansible to create contro
 Ansible Palybook (copyconfig.yml) to keep back up of full fabric (inventory) configuration on /configs</br>
 Topology represent the scenario on GNS3. Dell SmartFabric OS10.5.2.3 </br>
 
-#note:
+
+
+# Note 
 full Lab example is moved here: https://github.com/val3r1o/EVPN-multisite-superspine 
