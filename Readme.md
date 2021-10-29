@@ -1,12 +1,5 @@
 </B>How to use</B>
 
-# ./ Backup.sh 
-Backup script to lunch the back up and sync on git</br>
-This is to be used under source ~/opt/dellos10env/bin/activate virtual ENV </br>
-Please review https://github.com/val3r1o/startupdellos10ansible to create control node right way </br>
-Ansible Palybook (copyconfig.yml) to keep back up of full fabric (inventory) configuration on /configs</br>
-Topology represent the scenario on GNS3. Dell SmartFabric OS10.5.2.3 </br>
-
 Tha main point of this space is not the Ansible script, rather the Network configuration and possible replication of it.
 
 Lab includes:
@@ -35,3 +28,12 @@ Static Route for DC1/DC2 exit/last resort Static route redistribution on EVPN fo
 
 
 ![topology](https://user-images.githubusercontent.com/20860769/125304133-9e12d580-e32d-11eb-9abe-4775ab37c780.png)
+
+
+NOTES:
+# ./ Backup.sh 
+Backup script to lunch the back up and sync on git</br>
+This is to be used under source ~/opt/dellos10env/bin/activate virtual ENV </br>
+Please review https://github.com/val3r1o/startupdellos10ansible to create control node right way </br>
+Ansible Palybook (copyconfig.yml) to keep back up of full fabric (inventory) configuration on /configs</br>
+Topology represent the scenario on GNS3. Dell SmartFabric OS10.5.2.3 </br>
