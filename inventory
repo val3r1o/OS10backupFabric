@@ -1,42 +1,6 @@
 [switches]
 #list of device under test
-Leaf-1A ansible_host=10.0.0.1 ansible_network_os=dellos10
-Leaf-1B ansible_host=10.0.0.2 ansible_network_os=dellos10
-Leaf-2A ansible_host=10.0.0.3 ansible_network_os=dellos10
-#Leaf-2B ansible_host=10.0.0.4 ansible_network_os=dellos10
-Leaf-3A ansible_host=10.0.0.5 ansible_network_os=dellos10
-Leaf-3B ansible_host=10.0.0.6 ansible_network_os=dellos10
+Leaf-1 ansible_host=10.0.0.1 ansible_network_os=dellos10
+Leaf-2 ansible_host=10.0.0.2 ansible_network_os=dellos10
 
-Spine1 ansible_host=10.0.0.7 ansible_network_os=dellos10
-Spine2 ansible_host=10.0.0.8 ansible_network_os=dellos10
-
-NSX-T-1 ansible_host=10.0.0.9 ansible_network_os=dellos10
-NSX-T-2 ansible_host=10.0.0.10 ansible_network_os=dellos10
-
-Host-1 ansible_host=10.0.0.11 ansible_network_os=dellos10
-Host-2 ansible_host=10.0.0.12 ansible_network_os=dellos10
-Host-3 ansible_host=10.0.0.13 ansible_network_os=dellos10
-Host-4 ansible_host=10.0.0.14 ansible_network_os=dellos10
-
-EXT-R1-DC1 ansible_host=10.0.0.15 ansible_network_os=dellos10
-EXT-R2-DC1 ansible_host=10.0.0.16 ansible_network_os=dellos10
-
-Super-Spine1 ansible_host=10.0.0.17 ansible_network_os=dellos10
-Super-Spine2 ansible_host=10.0.0.18 ansible_network_os=dellos10
-
-Spine3 ansible_host=10.0.0.19 ansible_network_os=dellos10
-Spine4 ansible_host=10.0.0.20 ansible_network_os=dellos10
-
-Leaf-4A ansible_host=10.0.0.21 ansible_network_os=dellos10
-Leaf-4B ansible_host=10.0.0.22 ansible_network_os=dellos10
-Leaf-5A ansible_host=10.0.0.23 ansible_network_os=dellos10
-Leaf-5B ansible_host=10.0.0.24 ansible_network_os=dellos10
-
-EXT-R3-DC1 ansible_host=10.0.0.25 ansible_network_os=dellos10
-
-
-Host-5 ansible_host=10.0.0.26 ansible_network_os=dellos10
-Host-6 ansible_host=10.0.0.27 ansible_network_os=dellos10
-
-FW1 ansible_host=10.0.0.30 ansible_network_os=dellos10
-FW2 ansible_host=10.0.0.31 ansible_network_os=dellos10
+#... expand as needed
