@@ -4,7 +4,7 @@ echo ------------------ This is an automatic backup ----------------------------
 echo ------------------------------------------------------------------------------------------------------
 echo ------------------------------------------------- Dell NETWORKING ------------------------------------
 echo ------------------------------------------------------------------------------------------------------
-
+# a git account and git running on the node is needed. https://docs.github.com/en 
 cd OS10backupFabric/
 #change the name as your project needs, check EVPN multisite or EVPN DCI for further examples 
 ansible-playbook -i inventory copyconfig.yml
