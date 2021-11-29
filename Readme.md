@@ -1,6 +1,6 @@
-</B>How to use</B>
+# os10 config backup
 
-# ./ Backup.sh 
+is a ./ Backup.sh script.
 
 clone the project </br>
 backup.sh script is to launch the back up and sync on your git repo your project</br>
