@@ -39,5 +39,10 @@
     copy:
       content: "{{ config.stdout[0] }}"
       dest: "{{ dir }}/{{ cur_date }}-{{ inventory_hostname }}.txt"
-...
 
+  - name: "Save jinja Template "
+    copy:
+      content: "{{ config.stdout[0] }}"
+      dest: "{{ dir }}/{{ inventory_hostname }}.j2"
+
+...
