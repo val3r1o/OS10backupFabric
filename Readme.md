@@ -1,6 +1,6 @@
 # OS10 config backup
 
-backup.sh is a script to launch BOTH local back-up and sync on your git repository
+backup.sh is a script to launch BOTH local back-up and sync on your git repository</br>
 The ansible Palybook (copyconfig.yml) is made to create automatic backup of a full list of switches (inventory). 
 
 # How to use
