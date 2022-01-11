@@ -7,16 +7,18 @@ Also create jinja file to be reuse as template to "push" configurations to switc
 ref: https://github.com/val3r1o/os10-config-push 
 
 # How to use
-1
+1</br>
 Install Git and clone the project </br>
 
-sudo apt update
-sudo apt -y install git
-git clone https://github.com/val3r1o/os10-config-backup.git
-2
-Create your own Github repository so you can sync on your own space. Change the name based on your github and project
-3
-run ./backup when ready.
+sudo apt update</br>
+sudo apt -y install git</br>
+git clone https://github.com/val3r1o/os10-config-backup.git</br>
+
+2</br>
+Create your own Github repository so you can sync on your own space. Change the name based on your github and project</br>
+
+3</br>
+run ./backup when ready </br>
 -> 
 All configurations are stored on this local folder: /configs </br>
 
