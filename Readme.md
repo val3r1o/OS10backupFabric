@@ -25,7 +25,6 @@ When ready run: </br>
 All configurations are stored on this local folder: </br>
 /configs </br>
 
-Please review https://github.com/val3r1o/os10-startup-ansible to create control node right way </br>
-
 # Note 
-full Lab example is moved here: https://github.com/val3r1o/os10-evpn-multisite
+Please review https://github.com/val3r1o/os10-startup-ansible to create control node right way </br>
+Full Lab example is moved here: https://github.com/val3r1o/os10-evpn-multisite
