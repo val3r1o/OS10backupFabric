@@ -15,10 +15,12 @@ sudo apt -y install git</br>
 git clone https://github.com/val3r1o/os10-config-backup.git</br>
 
 2</br>
-Create your own Github repository so you can sync on your own space. Change the name based on your github and project</br>
+Create your own Github repository so you can sync on your own space </br>
+Change the name based on your github and project</br>
+Please check the file -> Create-Github-account.txt </br>
 
 3</br>
-run ./backup when ready </br>
+run ./backup.sh when ready </br>
 -> 
 All configurations are stored on this local folder: /configs </br>
 
