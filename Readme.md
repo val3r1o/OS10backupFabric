@@ -1,11 +1,21 @@
-# os10 config backup
+# OS10 config backup
 
-is a ./ Backup.sh script.
+backup.sh is a script to launch BOTH local back-up and sync on your git repository
+The ansible Palybook (copyconfig.yml) is made to create automatic backup of a full list of switches (inventory). 
 
-clone the project </br>
-backup.sh script is to launch the back up and sync on your git repo your project</br>
+# How to use
+1
+Install Git and clone the project </br>
 
-the ansible Palybook (copyconfig.yml) is made to create automatic backup of a full list of switches (inventory). All configurations are stored on /configs </br>
+sudo apt update
+sudo apt -y install git
+git clone https://github.com/val3r1o/os10-config-backup.git
+2
+Create your own Github repository so you can sync on your own space. Change the name based on your github and project
+3
+run ./backup when ready.
+-> 
+All configurations are stored on this local folder: /configs </br>
 
 Please review https://github.com/val3r1o/os10-startup-ansible to create control node right way </br>
 
