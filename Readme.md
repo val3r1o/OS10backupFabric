@@ -20,9 +20,10 @@ Change the name based on your github and project</br>
 Please check the file -> Create-Github-account.txt </br>
 
 3</br>
-run ./backup.sh when ready </br>
--> 
-All configurations are stored on this local folder: /configs </br>
+When ready run: </br>
+./backup.sh </br>
+All configurations are stored on this local folder: </br>
+/configs </br>
 
 Please review https://github.com/val3r1o/os10-startup-ansible to create control node right way </br>
 
