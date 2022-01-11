@@ -11,7 +11,6 @@ cd os10-config-backup/
 ansible-playbook -i inventory copyconfig.yml
 git status
 git pull
-git pull
 git add .
 git commit -a -m "standard update"
 git push origin main
