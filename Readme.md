@@ -2,6 +2,8 @@
 
 backup.sh is a script to launch BOTH local back-up and sync on your git repository</br>
 The ansible Palybook (copyconfig.yml) is made to create automatic backup of a full list of switches (inventory). 
+It save the file in .txt with date/time tag </br>
+Also create jinja file to be reuse as template to "push" configurations to switches
 
 # How to use
 1
