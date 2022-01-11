@@ -1,0 +1,17 @@
+sudo apt install git
+git config --global user.name "YOURNAME"
+git config --global user.email "YOURMAIL"
+
+# You need to have a git account -> github.com
+# On GITHUB.COM CREATE A NEW REPOSITORY NEWPROJECT (empty)
+# Copy the HTTPS link
+# make sure you have user/psw AND GIT-TOKEN
+
+git clone https://github.com/YOURNAME/NEWPROJECT.git
+echo "DESCRIPTION ON MAIN PAGE" >> README.md
+## Add or Create file needed to be sync. i.e. 
+# nano test-file.txt >> test-file
+git add -A
+git commit -a -m "add a smart comment"
+git push origin master
+git status
