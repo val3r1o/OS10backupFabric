@@ -9,6 +9,8 @@ echo ---------------------------------------------------------------------------
 cd os10-config-backup/
 #change the name as your project needs, check EVPN multisite or EVPN DCI for further examples 
 ansible-playbook -i inventory copyconfig.yml
+git config --global user.name "XXXXX"
+git config --global user.mail "XXXXX"
 git status
 git pull
 git add .
